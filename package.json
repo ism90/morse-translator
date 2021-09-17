@@ -1,7 +1,7 @@
 {
   "name": "morse-translator",
   "version": "1.0.0",
-  "description": "Morse Translator ",
+  "description": "",
   "main": "translator.js",
   "scripts": {
     "test": "jest"
