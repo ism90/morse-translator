@@ -61,7 +61,7 @@ describe("Testing translator ()", () => {
   // Invalid Tests
 
   it("Should not translate an empty string", () => {
-    const result = translator(" ");
+    const result = translator("");
     expect(result).toBe("Not a valid input");
   });
 
