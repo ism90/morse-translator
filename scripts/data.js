@@ -86,5 +86,13 @@ export const alphabet = {
   '"': ".-..-.",
   "?": "..--..",
   "/": "-..-.",
+  " ": "/"
 };
+
+// Morse to English Object
+
+export const morse = Object.fromEntries(
+  Object.entries(alphabet).map(([key,val]) => [val, key])
+);
+  
 
