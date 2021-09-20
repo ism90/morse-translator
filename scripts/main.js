@@ -6,6 +6,7 @@ const translator = new Translator(alphabet, morse);
 const input = document.querySelector(".input__box");
 const output = document.querySelector(".output__area");
 const button = document.querySelector(".button");
+const clear = document.querySelector(".clear");
 
 const determineTranslation = () => {
   let getTranslateType = input.value;
@@ -22,4 +23,8 @@ const determineTranslation = () => {
 };
 button.addEventListener("click", () => {
   determineTranslation();
+});
+
+clear.addEventListener("click", () => {
+  input.value = "";
 });
