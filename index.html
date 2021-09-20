@@ -8,32 +8,35 @@
     <title>Morse Code Translator</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">MORSE CODE TRANSLATOR</h1>
-    </header>
+    <div class="background"></div>
+    <div class="content">
+      <header class="header">
+        <h1 class="header__title">MORSE CODE TRANSLATOR</h1>
+      </header>
 
-    <main>
-      <div class="input">
-        <textarea
-          type="text"
-          placeholder="Enter some English or Morse!"
-          id="input"
-          class="input__box"
-          autofocus
-        ></textarea>
-
-        <div class="input__buttons">
-          <button class="input__buttons clear">CLEAR</button>
-          <button class="input__buttons button">TRANSLATE</button>
+      <main>
+        <div class="input">
+          <textarea
+            type="text"
+            placeholder="Enter some English or Morse!"
+            id="input"
+            class="input__box"
+            autofocus
+          ></textarea>
         </div>
-      </div>
-      <div class="output">
-        <p class="output__area">
-          
-        </p>
-      </div>
-    </main>
 
+        <div class="output">
+          <p class="output__area"></p>
+        </div>
+
+        <div class="buttons">
+          <button class="buttons clear">CLEAR</button>
+          <button class="buttons button">TRANSLATE</button>
+          <button class="buttons sound">SOUND</button>
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/morseSynth.js"></script>
     <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
