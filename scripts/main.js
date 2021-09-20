@@ -11,14 +11,14 @@ const clear = document.querySelector(".clear");
 const determineTranslation = () => {
   let getTranslateType = input.value;
   //RegEx search pattern for English input
-  if (/^[0-9a-zA-Zä-ż\s]+$/gm.test(getTranslateType)) {
+  if  (/^[.\/ -]*$/gm.test(getTranslateType)) {
     // If English input,
-    const translationToMorse = translator.translatorForMorse(getTranslateType);
-    output.innerHTML = translationToMorse;
-  } else {
-    const translationToEnglish =
-      translator.translatorForEnglish(getTranslateType);
+    const translationToEnglish = translator.translatorForEnglish(getTranslateType);
     output.innerHTML = translationToEnglish;
+  } else {
+    const translationToMorse =
+      translator.translatorForMorse(getTranslateType);
+    output.innerHTML = translationToMorse;
   }
 };
 button.addEventListener("click", () => {
@@ -28,3 +28,7 @@ button.addEventListener("click", () => {
 clear.addEventListener("click", () => {
   input.value = "";
 });
+
+
+
+// |&'@)(:,=!.-*%+"?
