@@ -1,6 +1,9 @@
 import { Translator } from "./translator";
 import { alphabet, morse } from "./data";
 
+
+// Tests for Translator 
+
 // Valid Tests
 describe("Testing translator ()", () => {
   it("Should translate a to .-", () => {
@@ -35,7 +38,6 @@ describe("Testing translator ()", () => {
   });
 
   // Special characters
-
   it("Should translate & to .-...", () => {
     const translator = new Translator(alphabet, morse);
     const result = translator.translatorForMorse("&");
@@ -68,7 +70,6 @@ describe("Testing translator ()", () => {
   });
 
   // Invalid Tests
-
   it("Should not translate an empty string", () => {
     const translator = new Translator(alphabet, morse);
     const result = translator.translatorForMorse("");
@@ -82,3 +83,14 @@ describe("Testing translator ()", () => {
     expect(result).toBe("Not a valid input");
   });
 });
+
+
+
+// Tests for DOM Functions
+
+// Valid Tests
+
+
+
+
+// Invalid Tests

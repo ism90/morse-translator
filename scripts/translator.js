@@ -1,11 +1,10 @@
 import { alphabet, morse } from "./data";
 
+// Translator: English to Morse / Morse to English
 export class Translator {
   constructor(alphabet, morse) {
     this.alphabet = alphabet;
     this.morse = morse;
-    // this.inputMessage = "";
-    // this.translatedMessage = "";
   }
 
   translatorForMorse(inputMessage) {
@@ -37,3 +36,4 @@ export class Translator {
     }
   }
 }
+
