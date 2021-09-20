@@ -1,1 +1,23 @@
+// Components: anything reusable such as buttons, navbars, cards etc.
+
 @use "./base" as *;
+
+button {
+  font-family: $font-button;
+  letter-spacing: 0.1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.2em;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  padding: 1em;
+}
+
+textarea::placeholder {
+  color: #030102;
+}
