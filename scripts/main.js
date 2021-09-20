@@ -12,8 +12,12 @@ const determineTranslation = () => {
   //RegEx search pattern for English input
   if (/^[0-9a-zA-Zä-ż\s]+$/gm.test(getTranslateType)) {
     // If English input,
-    const translation = translator.translatorForMorse(getTranslateType);
-    output.innerHTML = translation;
+    const translationToMorse = translator.translatorForMorse(getTranslateType);
+    output.innerHTML = translationToMorse;
+  } else {
+    const translationToEnglish =
+      translator.translatorForEnglish(getTranslateType);
+    output.innerHTML = translationToEnglish;
   }
 };
 button.addEventListener("click", () => {
