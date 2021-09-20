@@ -1,6 +1,6 @@
-import { alphabet, morse } from "./data";
-
 // Translator: English to Morse / Morse to English
+import { alphabet, morse } from "./data.js";
+
 export class Translator {
   constructor(alphabet, morse) {
     this.alphabet = alphabet;
@@ -36,4 +36,3 @@ export class Translator {
     }
   }
 }
-

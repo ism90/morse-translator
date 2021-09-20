@@ -15,20 +15,23 @@
 
     <main>
       <div class="input">
-        <input
+        <textarea
           type="text"
           placeholder="Enter some English or Morse!"
           id="input"
           class="input__box"
-        />
+          autofocus
+        ></textarea>
+
         <div class="input__buttons">
           <button class="input__buttons button">Translate</button>
         </div>
       </div>
       <div class="output">
+        <p class="output__area"></p>
       </div>
     </main>
 
-    <script src="./scripts/translator.js" type="module"></script>
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
