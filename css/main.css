@@ -1,13 +1,92 @@
-main {
-  background: red;
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Racing+Sans+One&family=Special+Elite&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Special Elite", sans-serif;
+  box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
-  main {
-    background: green;
-  }
+
+body {
+  background-image: url(../assets/background.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 25vh;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 @media only screen and (max-width: 425px) {
-  main {
+  body {
     background: blue;
   }
+}
+
+.header__title {
+  font-family: "Fugaz One";
+  letter-spacing: 0.1em;
+  color: black;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  margin-top: 5vh;
+}
+
+.input {
+  padding-top: 5vh;
+}
+.input__box {
+  background-image: url(../assets/paper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  width: 15vw;
+  color: #030102;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  grid-row: 2/3;
+}
+
+.output__area {
+  background-image: url("../assets/paper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  grid-row: 4;
+  margin-top: 0.5em;
+  margin-left: 5em;
+  height: 25vh;
+  width: 15vw;
+  padding: 1em;
+}
+
+button {
+  font-family: "Fugaz One";
+  letter-spacing: 0.1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.2em;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  padding: 1em;
+}
+
+textarea::-moz-placeholder {
+  color: #030102;
+}
+
+textarea:-ms-input-placeholder {
+  color: #030102;
+}
+
+textarea::placeholder {
+  color: #030102;
 }/*# sourceMappingURL=main.css.map */
