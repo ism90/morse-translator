@@ -10,9 +10,9 @@ const clear = document.querySelector(".clear");
 
 const determineTranslation = () => {
   let getTranslateType = input.value;
-  //RegEx search pattern for English input
+  //RegEx search pattern for Morse input
   if  (/^[.\/ -]*$/gm.test(getTranslateType)) {
-    // If English input,
+    // If Morse input
     const translationToEnglish = translator.translatorForEnglish(getTranslateType);
     output.innerHTML = translationToEnglish;
   } else {
@@ -29,6 +29,3 @@ clear.addEventListener("click", () => {
   input.value = "";
 });
 
-
-
-// |&'@)(:,=!.-*%+"?

@@ -1,2 +1,13 @@
-
-/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
+main {
+  background: red;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    background: green;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main {
+    background: blue;
+  }
+}/*# sourceMappingURL=main.css.map */
