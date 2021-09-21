@@ -34,7 +34,6 @@
   .content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     margin-top: 0;
   }
 }
@@ -64,33 +63,51 @@ main {
   letter-spacing: 0.1em;
   color: black;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   color: wheat;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 425px) {
+  .header__title {
+    margin-bottom: 30px;
+  }
 }
 
 .input {
   margin: auto;
 }
 .input__box {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 300px;
-  width: 200px;
+  width: 225px;
   padding: 1em;
   color: wheat;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+@media only screen and (max-width: 425px) {
+  .input__box {
+    margin-bottom: 10px;
+    order: 0;
+  }
 }
 
 .output {
   margin: auto;
 }
+@media only screen and (max-width: 425px) {
+  .output {
+    order: 2;
+    margin-top: 10px;
+  }
+}
 .output__area {
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   height: 300px;
-  width: 200px;
+  width: 225px;
   padding: 1em;
   color: wheat;
 }
@@ -103,16 +120,18 @@ main {
 @media only screen and (max-width: 425px) {
   .buttons {
     padding: 5px;
+    order: 1;
   }
 }
 
 button {
   font-family: "Fugaz One";
   letter-spacing: 0.1em;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   color: wheat;
   padding: 0.2em;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 textarea {

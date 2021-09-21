@@ -5,10 +5,11 @@
 button {
   font-family: $font-button;
   letter-spacing: 0.1em;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   color: wheat;
   padding: 0.2em;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 textarea {
