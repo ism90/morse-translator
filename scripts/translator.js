@@ -7,7 +7,7 @@ export class Translator {
     this.morse = morse;
   }
 
-  translatorForMorse(inputMessage) {
+  translatorToMorse(inputMessage) {
     if (typeof inputMessage === "string" && inputMessage.length > 0) {
       const inputMessageLowerCase = inputMessage.toLowerCase();
 
@@ -22,7 +22,7 @@ export class Translator {
     }
   }
 
-  translatorForEnglish(inputMessage) {
+  translatorToEnglish(inputMessage) {
     if (typeof inputMessage === "string" && inputMessage.length > 0) {
       const inputMessageMorse = inputMessage;
       const inputMessageMorseArray = inputMessageMorse.split(" ");

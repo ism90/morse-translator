@@ -15,10 +15,10 @@ const determineTranslation = () => {
   if (/^[.\/ -]*$/gm.test(getTranslateType)) {
     // If Morse input
     const translationToEnglish =
-      translator.translatorForEnglish(getTranslateType);
+      translator.translatorToEnglish(getTranslateType);
     output.innerHTML = translationToEnglish;
   } else {
-    const translationToMorse = translator.translatorForMorse(getTranslateType);
+    const translationToMorse = translator.translatorToMorse(getTranslateType);
     output.innerHTML = translationToMorse;
   }
 };
