@@ -8,7 +8,7 @@ The translator detects the input language (Morse Code or English) and translates
 - [ ] Fix removing first character that start with a "."
 - [ ] Function naming Best Practices
 - [ ] Button hover effects
-- [ ] Animation for header text? - typewriter entry
+- [x] Animation for header text? - typewriter entry
 
 ---
 
