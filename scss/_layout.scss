@@ -58,15 +58,42 @@ main {
     font-family: $font-header;
     letter-spacing: 0.1em;
     padding: 1em;
+    color: wheat;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    color: wheat;
-    font-weight: bold;
-    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end 6;
     margin-bottom: 20px;
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: wheat;
+      }
+    }
 
     @include respond(mobile) {
       margin-bottom: 30px;
+      animation: none;
+      white-space: normal;
     }
   }
 }
