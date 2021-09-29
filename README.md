@@ -8,10 +8,9 @@ The translator detects the input language (Morse Code or English) and translates
 ### To Do
 
 - [ ] Fix for blank space when copying and pasting morse back over? Currenty need to manually remove blank line for it to work properly
-- [ ] Fix removing first character that start with a "."
 - [ ] Function naming Best Practices
 - [ ] Button hover effects
-- [x] Animation for header text? - typewriter entry
+- [ ] Sound only works correctly when English is inputted in value box
 
 ---
 
