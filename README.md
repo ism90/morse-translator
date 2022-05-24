@@ -5,6 +5,8 @@ The translator detects the input language (Morse Code or English) and translates
 
 [Live Preview](https://ism90.github.io/morse-translator/)
 
+![Projects](https://github.com/ism90/morse-translator/blob/main/assets/Morse.png)
+
 ### To Do
 
 - [ ] Fix for blank space when copying and pasting morse back over? Currenty need to manually remove blank line for it to work properly
@@ -14,4 +16,4 @@ The translator detects the input language (Morse Code or English) and translates
 
 ---
 
-Morse Audio taken from [morseSynth Library](https://github.com/netAction/morseSynth)comm
+Morse Audio taken from [morseSynth Library](https://github.com/netAction/morseSynth)
