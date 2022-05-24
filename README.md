@@ -12,4 +12,4 @@ The translator detects the input language (Morse Code or English) and translates
 
 ---
 
-Morse Audio taken from [morseSynth Library](https://github.com/netAction/morseSynth)
+Morse Audio taken from [morseSynth Library](https://github.com/netAction/morseSynth)comm
